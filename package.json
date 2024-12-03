@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev --host",
-    "start": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
