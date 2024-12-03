@@ -1,0 +1,67 @@
+---
+
+---
+
+<div class="animated-dots">
+  {
+    Array.from({ length: 100 }).map((_, i) => (
+      <div
+        class="dot"
+        style={`--delay: ${Math.random() * 4}s; --size: ${Math.random() * 4 + 2}px`}
+      />
+    ))
+  }
+</div>
+
+<style>
+  .animated-dots {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .dot {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: float var(--duration, 20s) ease-in-out infinite;
+    animation-delay: var(--delay);
+  }
+
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    33% {
+      transform: translate(
+        calc(100px + var(--delay) * 10px),
+        calc(50px + var(--delay) * 5px)
+      );
+    }
+    66% {
+      transform: translate(
+        calc(-50px - var(--delay) * 5px),
+        calc(100px + var(--delay) * 10px)
+      );
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+</style>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+<script>
+  const dots = document.querySelectorAll('.dot')
+
+  dots.forEach((dot) => {
+    dot.style.left = `${Math.random() * 100}vw`
+    dot.style.top = `${Math.random() * 100}vh`
+    dot.style.setProperty('--duration', `${15 + Math.random() * 10}s`)
+  })
+</script>

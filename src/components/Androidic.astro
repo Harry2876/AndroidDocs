@@ -5,14 +5,15 @@
  * @param {string} height - Height of the icon (default: '48px').
  * @param {string} fill - Fill color for the icon (default: '#30dc80').
  */
- export interface Props {
-  width?: string;
-  height?: string;
-  fill?: string;
+export interface Props {
+  width?: string
+  height?: string
+  fill?: string
 }
 
-const { width = '48px', height = '48px', fill = 'currentColor' } = Astro.props;
+const { width = '48px', height = '48px', fill = 'currentColor' } = Astro.props
 ---
+
 <svg
   xmlns="http://www.w3.org/2000/svg"
   x="0px"
