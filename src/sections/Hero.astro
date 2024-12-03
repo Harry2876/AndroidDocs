@@ -1,5 +1,4 @@
 ---
-// import HeroGradient from '../components/HeroGradient.astro'
 import Particle from '../components/Particles.astro'
 import HeroGradientBg from '../components/HeroBackground.astro'
 
@@ -12,67 +11,50 @@ interface Props {
 const { title, description, align = 'left' } = Astro.props
 ---
 
-
 <section class="relative h-svh w-full text-neutral-700 overflow-clip">
   <div
     class="relative flex items-center w-full h-full bg-gradient-to-b from-primary/5 via-primary/0 via-70% to-secondary/5 overflow-clip"
   >
+    <!-- Background Components -->
     <HeroGradientBg />
-    <!-- <HeroGradient /> -->
-
     <Particle />
+
+    <!-- Content Section -->
     <div
       class:list={[
         'relative container w-full flex flex-col gap-16',
-<section
-  class=" bg-test relative h-svh text-neutral-800 px-4 pt-24 pb-8 md:px-8 overflow-clip hue-shift"
->
-  <div
-    class="relative flex justify-center items-center w-full h-full rounded-2xl overflow-clip"
-  >
-    <div
-      class:list={[
-        'relative container flex flex-col gap-8',
         align === 'center' ? 'text-center' : '',
       ]}
     >
       <div class="flex flex-col items-center gap-8 w-full">
-        <!-- {
-          title && (
-            <h1
-              class:list={[
-
-                'text-4xl sm:text-[7.5vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] leading-none [&>strong]:font-medium',
-                align === 'center' ? 'mx-auto' : '',
-=======
-                'text-[8vw] sm:text-[7.5vw] md:text-[7vw] lg:text-[6vw] xl:text-[4vw] leading-none [&>strong]:font-medium',
-                align === 'left' ? 'mx-auto' : '','whitespace-nowrap',
-
-              ]}
-              set:html={title}
-            />
-          )
-        }
-         -->
-        <div
-          class="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-4xl md:text-6xl !leading-[1.15] w-full font-heading"
-        >
-          Elevate Development with <span
-            class="text-transparent animate-color bg-gradient-to-r from-[#8b5cf6] to-[#d946ef] bg-clip-text inline-bloc"
-            >Crafted Libraries</span
+        {title && (
+          <h1
+            class:list={[
+              'text-4xl sm:text-[7.5vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] leading-none [&>strong]:font-medium',
+              align === 'center' ? 'mx-auto' : '',
+            ]}
           >
+            {title}
+          </h1>
+        )}
+
+        <div
+          class="text-foreground text-center py-6 text-5xl font-medium tracking-normal sm:text-4xl md:text-6xl !leading-[1.15] w-full font-heading"
+        >
+          Elevate Development with
+          <span
+            class="text-transparent animate-color bg-gradient-to-r from-[#8b5cf6] to-[#d946ef] bg-clip-text inline-block"
+          >
+            Crafted Libraries
+          </span>
         </div>
 
-        {
-          description && (
-            <p
-              class:list={['text-neutral-500 text-center lg:text-lg']}
-              set:html={description}
-            />
-          )
-        }
+        {description && (
+          <p class="text-neutral-500 text-center lg:text-lg">{description}</p>
+        )}
       </div>
 
+      <!-- Slot for Additional Content -->
       <div class="flex flex-col gap-4">
         <slot />
       </div>
