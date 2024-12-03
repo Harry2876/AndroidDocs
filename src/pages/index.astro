@@ -12,6 +12,9 @@ import Sidebar from '../layouts/Sidebar.astro'
 ---
 <Layout title="Free Astro Components">
   <Sidebar class="lg:hidden" />
+  <div class="absolute inset-0 -z-10 h-full w-full" style="background:var(--theme-gradient)">
+    <div class="absolute inset-0 -z-10 h-full w-full"
+    style="background: var(--grid-gradient);background-size: 10px 10px;auto">
   <Header />
   <main>
     <Hero
@@ -40,6 +43,8 @@ import Sidebar from '../layouts/Sidebar.astro'
   </main>
     </Hero>
   </main>
+</div>
+</div>
 </Layout>
 
 
