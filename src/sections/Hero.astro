@@ -12,6 +12,7 @@ interface Props {
 const { title, description, align = 'left' } = Astro.props
 ---
 
+
 <section class="relative h-svh w-full text-neutral-700 overflow-clip">
   <div
     class="relative flex items-center w-full h-full bg-gradient-to-b from-primary/5 via-primary/0 via-70% to-secondary/5 overflow-clip"
@@ -23,6 +24,15 @@ const { title, description, align = 'left' } = Astro.props
     <div
       class:list={[
         'relative container w-full flex flex-col gap-16',
+<section
+  class=" bg-test relative h-svh text-neutral-800 px-4 pt-24 pb-8 md:px-8 overflow-clip hue-shift"
+>
+  <div
+    class="relative flex justify-center items-center w-full h-full rounded-2xl overflow-clip"
+  >
+    <div
+      class:list={[
+        'relative container flex flex-col gap-8',
         align === 'center' ? 'text-center' : '',
       ]}
     >
@@ -31,8 +41,13 @@ const { title, description, align = 'left' } = Astro.props
           title && (
             <h1
               class:list={[
+
                 'text-4xl sm:text-[7.5vw] md:text-[7vw] lg:text-[6vw] xl:text-[5vw] leading-none [&>strong]:font-medium',
                 align === 'center' ? 'mx-auto' : '',
+=======
+                'text-[8vw] sm:text-[7.5vw] md:text-[7vw] lg:text-[6vw] xl:text-[4vw] leading-none [&>strong]:font-medium',
+                align === 'left' ? 'mx-auto' : '','whitespace-nowrap',
+
               ]}
               set:html={title}
             />

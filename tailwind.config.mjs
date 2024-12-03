@@ -8,6 +8,7 @@ export default {
       primary: 'rgb(var(--ac-primary), <alpha-value>)',
       secondary: 'rgb(var(--ac-secondary), <alpha-value>)',
       white: 'rgb(var(--ac-white), <alpha-value>)',
+      test: '248, 249, 250',
       black: 'rgb(0, 0, 0)',
       dark: 'rgb(var(--ac-dark), <alpha-value>)',
       gray: {

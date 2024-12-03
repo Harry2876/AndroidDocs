@@ -2,6 +2,7 @@
 import { Button } from 'free-astro-components'
 import Code from '../components/Code.astro'
 import CTA from '../sections/CTA.astro'
+import CodeBlock from '../components/CodeBlock.astro'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 import Hero from '../sections/Hero.astro'
@@ -10,15 +11,20 @@ import Layout from '../layouts/Layout.astro'
 import Sidebar from '../layouts/Sidebar.astro'
 import CodeSnippet from '../components/CodeSnippet.astro'
 ---
-
 <Layout title="Free Astro Components">
   <Sidebar class="lg:hidden" />
+  <div class="absolute inset-0 -z-10 h-full w-full" style="background:var(--theme-gradient)">
+    <div class="absolute inset-0 -z-10 h-full w-full"
+    style="background: var(--grid-gradient);background-size: 10px 10px;auto">
   <Header />
   <main>
     <Hero
       align="center"
       description="You can use these components to build your Astro projects faster."
     >
+    align="center"
+    title="Elevate Development with <a href='#'>Crafted Libraries</a>"
+    description="for Seamless Android Development">
       <div>
         <Button
           href="/guide/installation"
@@ -42,4 +48,26 @@ import CodeSnippet from '../components/CodeSnippet.astro'
     </Hero>
     <Footer />
   </main>
+      <div style="width: 33%; margin-left:35% ;">
+        <CodeBlock lang='css', title='build.gradle', code = "implementation 'com.android.harry.androidloaders'"/>
+        <!-- <Code code="npm install free-astro-components" /> -->
+      </div>
+      <div class="container py-8 lg:py-12">
+        <div
+          class="flex flex-col gap-8 lg:items-center"
+        >
+          <div class="flex flex-col gap-8">
+            <p class="text-neutral-700">
+              A Collection of <strong>Free Astro Components❤️</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+  </main>
+    </Hero>
+  </main>
+</div>
+</div>
 </Layout>
+
+
