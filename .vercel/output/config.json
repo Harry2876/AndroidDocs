@@ -1,0 +1,87 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^\\/_image$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/accordion\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/button\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/checkbox\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/icon\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/input\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/modal\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/radio\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/select\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/switch\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/tab\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/textarea\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/components\\/theme-switch\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/guide\\/colors\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/guide\\/customize-colors\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/guide\\/installation\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/resources\\/available-icons\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/$",
+			"dest": "_render"
+		}
+	]
+}

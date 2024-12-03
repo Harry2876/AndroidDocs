@@ -1,0 +1,45 @@
+---
+import { Button } from 'free-astro-components'
+// import Code from '../Loader Docs/src/components/Code.astro'
+// import CTA from '../Loader Docs/src/sections/CTA.astro'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import Hero from '../sections/Hero.astro'
+// import Intro from '../Loader Docs/src/sections/Intro.astro'
+import Layout from '../layouts/Layout.astro'
+import Sidebar from '../layouts/Sidebar.astro'
+import CodeSnippet from '../components/CodeSnippet.astro'
+---
+
+<Layout title="Free Astro Components">
+  <Sidebar class="lg:hidden" />
+  <Header />
+  <main>
+    <Hero
+      align="center"
+      description="You can use these components to build your Astro projects faster."
+    >
+      <div>
+        <Button
+          href="/guide/installation"
+          label="Get started"
+          class="bg-[#63e] animate-color"
+        />
+      </div>
+      <div>
+        <!-- <Code code="npm install free-astro-components" /> -->
+        <CodeSnippet />
+      </div>
+
+      <!-- <Intro />
+    <CTA
+      align="center"
+      title="Ready to <strong>Get Started?</strong>"
+      description="Explore my collection of free Astro components and start building your next project today."
+    >
+      <Button href="/components/button" label="Explore Components" />
+    </CTA> -->
+    </Hero>
+    <Footer />
+  </main>
+</Layout>
