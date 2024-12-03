@@ -2,6 +2,7 @@
 import { Button } from 'free-astro-components'
 import Code from '../components/Code.astro'
 import CTA from '../sections/CTA.astro'
+import CodeBlock from '../components/CodeBlock.astro'
 import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 import Hero from '../sections/Hero.astro'
@@ -9,31 +10,36 @@ import Intro from '../sections/Intro.astro'
 import Layout from '../layouts/Layout.astro'
 import Sidebar from '../layouts/Sidebar.astro'
 ---
-
 <Layout title="Free Astro Components">
   <Sidebar class="lg:hidden" />
   <Header />
   <main>
     <Hero
       align="center"
-      title="A collection of <strong>Free Astro Components</strong>"
-      description="You can use these components to build your Astro projects faster."
+      title="Elevate Development with <strong>Crafted Libraries</strong>"
+      description="for Seamless Android Development"
     >
       <div>
         <Button href="/guide/installation" label="Get started" />
       </div>
-      <div>
-        <Code code="npm install free-astro-components" />
+      <div style="width: 33%; margin-left:35% ;">
+        <CodeBlock lang='css', title='build.gradle', code = "implementation 'com.android.harry.androidloaders'"/>
+        <!-- <Code code="npm install free-astro-components" /> -->
       </div>
-    </Hero>
-    <Intro />
-    <CTA
-      align="center"
-      title="Ready to <strong>Get Started?</strong>"
-      description="Explore my collection of free Astro components and start building your next project today."
-    >
-      <Button href="/components/button" label="Explore Components" />
-    </CTA>
+      <div class="container py-8 lg:py-12">
+        <div
+          class="flex flex-col gap-8 lg:items-center"
+        >
+          <div class="flex flex-col gap-8">
+            <p class="text-neutral-700">
+              A Collection of <strong>Free Astro Components❤️</strong>
+            </p>
+          </div>
+        </div>
+      </div>
   </main>
-  <Footer />
+    </Hero>
+  </main>
 </Layout>
+
+

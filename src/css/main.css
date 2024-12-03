@@ -2,7 +2,7 @@
   /* Colors */
   --ac-transparent: transparent;
   --ac-current: currentColor;
-  --ac-white: 254, 234, 250;
+  --ac-white: 248, 249, 250;
   --ac-primary: 400, 93, 55;
   --ac-secondary: 98, 251, 213;
   --ac-dark: 10, 10, 10;
@@ -102,6 +102,10 @@
 [data-theme='light'] {
   color-scheme: light;
   --ac-color-100: var(--ac-white);
+  --theme-gradient: radial-gradient(125% 125% at 50% 10%, #fff 40%, #63e 100%);
+  --grid-gradient: linear-gradient(to right, #8080800a 2px, transparent 2px),
+  linear-gradient(to bottom, #8080800a 2px, transparent 2px);
+  --dot-gradient: radial-gradient(#1c1c1c 1px, transparent 1px);
   --ac-color-200: var(--ac-gray-100);
   --ac-color-300: var(--ac-gray-200);
   --ac-color-400: var(--ac-gray-300);
@@ -114,6 +118,9 @@
 [data-theme='dark'] {
   color-scheme: dark;
   --ac-color-100: var(--ac-dark);
+  --theme-gradient: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+  --grid-gradient: linear-gradient(to right, #e4e3e31a 1px, transparent 1px),linear-gradient(to bottom, #e4e3e31a 1px, transparent 1px);
+  --dot-gradient: radial-gradient(#e5e7eb 1px, transparent 1px);
   --ac-color-200: var(--ac-gray-500);
   --ac-color-300: var(--ac-gray-400);
   --ac-color-400: var(--ac-gray-300);

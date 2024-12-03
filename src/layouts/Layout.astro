@@ -11,6 +11,9 @@ const { title } = Astro.props
 <html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
+    <div class="absolute inset-0 -z-10 h-full w-full" style="background:var(--theme-gradient)">
+      <div class="absolute inset-0 -z-10 h-full w-full"
+      style="background: var(--grid-gradient);background-size: 10px 10px;auto">
     <meta
       name="description"
       content="You can use these components to build your Astro projects faster."
@@ -19,6 +22,8 @@ const { title } = Astro.props
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Hello</title>
+      </div>
+  </div>
   </head>
   <body>
     <slot />
