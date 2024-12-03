@@ -1,9 +1,7 @@
 {
     "functions": {
       "api/*": {
-        "includeFiles": [
-          "node_modules/cookie/**"
-        ]
+        "includeFiles": "node_modules/cookie/**"
       }
     }
   }
