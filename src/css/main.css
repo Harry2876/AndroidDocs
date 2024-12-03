@@ -129,3 +129,17 @@
   border-width: 0;
   border-style: solid;
 }
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.animate-color {
+  animation: hueRotate 10s linear infinite;
+}

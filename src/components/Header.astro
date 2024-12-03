@@ -9,14 +9,16 @@ import Androidic from './Androidic.astro'
 >
   <div class="container flex justify-between items-center gap-8">
     <a
-      class="flex items-center gap-5 text-primary hover:text-secondary text-4xl font-bold leading-none transition duration-300 ease-in-out"
+      class="flex items-center gap-5 text-primary hover:text-secondary text-sm md:text-2xl font-bold leading-none transition duration-300 ease-in-out"
       href="/"
       aria-label="Free Astro components"
     >
-    <Androidic width="38px" height="38px" fill="currentColor" />
-    <h2 class="text-primary hover:text-secondary text-4xl lg:text-2xl leading-none transition duration-300 ease-in-out">
-      Android Library
-    </h2>
+      <Androidic width="38px" height="38px" fill="green" />
+      <h2
+        class="animate-color text-transparent animate-color bg-gradient-to-r from-[#8b5cf6] to-[#d946ef] bg-clip-text"
+      >
+        Android Library
+      </h2>
     </a>
 
     <nav>
