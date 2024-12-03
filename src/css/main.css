@@ -5,6 +5,9 @@
   --ac-white: 248, 249, 250;
   --ac-primary: 400, 93, 55;
   --ac-secondary: 98, 251, 213;
+  --tertiary: #32cd32;
+  --fourth: #f13d9d;
+  --fifth: #39c2f0;
   --ac-dark: 10, 10, 10;
   --ac-gray-100: 232, 232, 232;
   --ac-gray-200: 185, 185, 185;
@@ -31,6 +34,31 @@
   --ac-white-focus: 0 0 0 2px rgba(var(--ac-white), 0.4);
 
   --ac-disabled-opacity: 0.4;
+
+  /* Hue Shift Animation */
+  @keyframes hueShift {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    25% {
+      filter: hue-rotate(90deg);
+    }
+    50% {
+      filter: hue-rotate(180deg);
+    }
+    75% {
+      filter: hue-rotate(270deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  /* Applying the animation to the hue-shift class */
+  .hue-shift {
+    display: inline-block;
+    animation: hueShift 5s infinite linear;
+  }
 
   /* Outline */
   --ac-outline-color: rgba(var(--ac-primary), 0.5);
