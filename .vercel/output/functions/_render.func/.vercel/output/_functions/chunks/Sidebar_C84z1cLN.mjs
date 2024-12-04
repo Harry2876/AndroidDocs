@@ -574,11 +574,6 @@ const icons = [
     category: "shapes",
     name: "star",
     path: '<path d="M11.0489 4.92705C11.3483 4.00574 12.6517 4.00574 12.9511 4.92705L14.2451 8.90983C14.379 9.32185 14.763 9.60081 15.1962 9.60081H19.3839C20.3527 9.60081 20.7554 10.8404 19.9717 11.4098L16.5838 13.8713C16.2333 14.126 16.0866 14.5773 16.2205 14.9894L17.5146 18.9721C17.8139 19.8934 16.7595 20.6596 15.9757 20.0902L12.5878 17.6287C12.2373 17.374 11.7627 17.374 11.4122 17.6287L8.02426 20.0902C7.24054 20.6596 6.18607 19.8934 6.48542 18.9721L7.7795 14.9894C7.91338 14.5773 7.76672 14.126 7.41623 13.8713L4.02827 11.4098C3.24456 10.8404 3.64734 9.60081 4.61606 9.60081H8.8038C9.23703 9.60081 9.62099 9.32185 9.75486 8.90983L11.0489 4.92705Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'
-  },
-  {
-    category: "shapes",
-    name: "an",
-    path: '<path fill="currentColor" d="M24,14.088C11.427,14.088,1.108,23.716,0,36h48C46.892,23.716,36.573,14.088,24,14.088z M33.179,27.079c0-1.104,0.895-1.999,1.999-1.999c1.104,0,1.999,0.895,1.999,1.999c0,1.104-0.895,1.999-1.999,1.999	C34.074,29.078,33.179,28.183,33.179,27.079z M12.822,29.078c-1.104,0-1.999-0.895-1.999-1.999c0-1.104,0.895-1.999,1.999-1.999	s1.999,0.895,1.999,1.999C14.821,28.183,13.926,29.078,12.822,29.078z" stroke="currentColor"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M34.038,19.313c-0.14,0-0.281-0.035-0.41-0.11c-0.393-0.227-0.527-0.729-0.301-1.122l5.197-9.008	c0.227-0.394,0.729-0.529,1.122-0.301c0.393,0.227,0.527,0.729,0.301,1.122l-5.197,9.008C34.598,19.166,34.322,19.313,34.038,19.313	z" stroke="currentColor"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path fill="currentColor" d="M13.962,19.313c-0.284,0-0.56-0.148-0.712-0.411L8.054,9.894C7.827,9.501,7.962,8.999,8.354,8.772	c0.392-0.228,0.895-0.093,1.122,0.301l5.197,9.008c0.227,0.394,0.092,0.896-0.301,1.122C14.243,19.278,14.102,19.313,13.962,19.313z" stroke="currentColor"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'
   }
 ];
 
@@ -588,7 +583,7 @@ const $$Icon = createComponent(($$result, $$props, $$slots) => {
   Astro2.self = $$Icon;
   const { icon, class: className, ...props } = Astro2.props;
   const iconPath = icons.find((i) => i.name === icon)?.path;
-  return renderTemplate`${maybeRenderHead()}<svg${addAttribute(className, "class")} width="48" height="48" fill="none" viewBox="0 0 24 24"${spreadAttributes(props)}>${unescapeHTML(iconPath)}</svg>`;
+  return renderTemplate`${maybeRenderHead()}<svg${addAttribute(className, "class")} width="24" height="24" fill="none" viewBox="0 0 24 24"${spreadAttributes(props)}>${unescapeHTML(iconPath)}</svg>`;
 }, "/Users/hariomharsh/Developer/Loader Docs/node_modules/free-astro-components/src/components/Icon.astro", void 0);
 
 const $$Astro$l = createAstro();

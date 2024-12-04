@@ -1,7 +1,7 @@
 /* empty css                                        */
 import { c as createComponent, r as renderTemplate, e as renderComponent, b as createAstro, m as maybeRenderHead } from '../../chunks/astro/server_Ds4EK5TR.mjs';
 import 'kleur/colors';
-import { $ as $$Header, a as $$Sidebar, c as $$Tab, d as $$TabItem, h as $$Checkbox$1, b as $$Layout } from '../../chunks/Sidebar_CxOVtieV.mjs';
+import { $ as $$Header, a as $$Sidebar, c as $$Tab, d as $$TabItem, h as $$Checkbox$1, b as $$Layout } from '../../chunks/Sidebar_C84z1cLN.mjs';
 import { $ as $$Content, a as $$Article, b as $$Prose, c as $$Text, d as $$Heading, e as $$CodeBlock, f as $$List, g as $$ListItem } from '../../chunks/Text_ojr4Afgw.mjs';
 import { $ as $$Preview } from '../../chunks/Preview_BXljXZGL.mjs';
 import { $ as $$Table } from '../../chunks/Table_Ba2SoQkR.mjs';

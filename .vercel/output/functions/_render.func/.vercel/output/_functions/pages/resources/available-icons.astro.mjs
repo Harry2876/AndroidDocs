@@ -1,7 +1,7 @@
 /* empty css                                        */
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, d as renderSlot, e as renderComponent, b as createAstro } from '../../chunks/astro/server_Ds4EK5TR.mjs';
 import 'kleur/colors';
-import { $ as $$Header, a as $$Sidebar, i as $$Icon, b as $$Layout } from '../../chunks/Sidebar_CxOVtieV.mjs';
+import { $ as $$Header, a as $$Sidebar, i as $$Icon, b as $$Layout } from '../../chunks/Sidebar_C84z1cLN.mjs';
 import { $ as $$Content, a as $$Article, b as $$Prose, c as $$Text, e as $$CodeBlock, d as $$Heading, f as $$List, g as $$ListItem } from '../../chunks/Text_ojr4Afgw.mjs';
 import 'clsx';
 import { $ as $$Link } from '../../chunks/Link_DDQGWXhr.mjs';

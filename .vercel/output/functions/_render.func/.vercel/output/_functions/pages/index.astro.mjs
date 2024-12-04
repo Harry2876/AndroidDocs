@@ -1,7 +1,7 @@
 /* empty css                                     */
 import { c as createComponent, r as renderTemplate, m as maybeRenderHead, a as addAttribute, e as renderComponent, d as renderSlot, b as createAstro } from '../chunks/astro/server_Ds4EK5TR.mjs';
 import 'kleur/colors';
-import { a as $$Sidebar, $ as $$Header, e as $$Button, b as $$Layout } from '../chunks/Sidebar_CxOVtieV.mjs';
+import { a as $$Sidebar, $ as $$Header, e as $$Button, b as $$Layout } from '../chunks/Sidebar_C84z1cLN.mjs';
 import 'clsx';
 /* empty css                                 */
 export { renderers } from '../renderers.mjs';
